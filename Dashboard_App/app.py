@@ -26,7 +26,7 @@ with st.sidebar:
 
     if st.button('Predict'):
         check_prediction = 1            
-        if category = 'grocery':
+        if category == 'grocery':
             temp_category = 'grocery_pos'
         else:
             temp_category = 'misc_net' 
