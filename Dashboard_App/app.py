@@ -73,7 +73,7 @@ with tab3:
         st.text_input("Model Input", payload)
         #score_input = {"payload" : payload}
         #data_1 = pd.DataFrame.from_dict(payload)
-        st.table(score_input)
+        #st.table(score_input)
         output1 = binary_model(payload)
         st.text_input ('Binary Model Output',output1)
         st.write("#")
