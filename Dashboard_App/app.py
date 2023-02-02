@@ -75,7 +75,7 @@ with tab3:
         url = 'http://svc-090535dc-7b28-45c0-ae26-cf4b6523c34f:5001/creditcardfrauddetectionmodel/8adb1856-5c6a-45bd-93bf-1e0c568e8e59/score'
         score_input = {"payload" : payload}
         st.write(score_input)
-        response_json = requests.post(url, json=data, headers=headers)
+        response_json = requests.post(url, json=score_input, headers=headers)
         st.text_input("API Response: ",response_json.content)
         response = response_json.json()
         try:
