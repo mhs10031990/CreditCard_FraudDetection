@@ -71,7 +71,7 @@ with tab2:
 
 
 with tab3:
-    if check_prediction > 0:
+    if check_prediction == 1:
         st.text_input("Raw Input", payload)
         headers={"Content-type":"application/json"}
         url = 'http://svc-090535dc-7b28-45c0-ae26-cf4b6523c34f:5001/creditcardfrauddetectionmodel/8adb1856-5c6a-45bd-93bf-1e0c568e8e59/score'
@@ -86,7 +86,6 @@ with tab3:
         except ValueError:
             output1 =  response.status_code 
             st.text_input ('Oops we got an error: ',output1)
-        output1 = binary_model(payload)
         st.write("#")
     else:
         st.write("Submit to check the model prediction")
