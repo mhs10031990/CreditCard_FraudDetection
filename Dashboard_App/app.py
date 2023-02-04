@@ -69,7 +69,7 @@ with tab2:
     col6.image(image6, caption='SMOTE Model ROC/AUC')
     st.write("#")    
 
-
+'''
 with tab3:
     if check_prediction > 0:
         st.text_input("Raw Input", payload)
@@ -90,3 +90,4 @@ with tab3:
     else:
         st.write("Submit to check the model prediction")
 
+'''
