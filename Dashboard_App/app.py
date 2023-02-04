@@ -1,6 +1,5 @@
 import streamlit as st
 import streamlit.components.v1 as components
-from prediction import binary_model
 import pandas as pd
 import requests
 import json
@@ -38,6 +37,7 @@ with st.sidebar:
     else :
         st.write('Please submit once you are ready!')
 
+
 tab1, tab2, tab3 = st.tabs(["Data Profile", "Insights", "Prediction"])
 with tab1:
     HtmlFile = open("data_profile.html", 'r', encoding='utf-8')
@@ -71,7 +71,7 @@ with tab2:
 
 
 with tab3:
-    if check_prediction == 1:
+    if check_prediction > 0:
         st.text_input("Raw Input", payload)
         headers={"Content-type":"application/json"}
         url = 'http://svc-090535dc-7b28-45c0-ae26-cf4b6523c34f:5001/creditcardfrauddetectionmodel/8adb1856-5c6a-45bd-93bf-1e0c568e8e59/score'
