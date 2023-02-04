@@ -37,15 +37,14 @@ with st.sidebar:
     else :
         st.write('Please submit once you are ready!')
 
-'''
 tab1, tab2, tab3 = st.tabs(["Data Profile", "Insights", "Prediction"])
 
 with tab1:
-    st.write("Work in Progress")
+    #st.write("Work in Progress")
     HtmlFile = open("data_profile.html", 'r', encoding='utf-8')
     source_code = HtmlFile.read() 
     components.html(source_code, height = 600, scrolling=True)
-
+'''
 with tab2:
     image1 = Image.open('Target_Without_SMOTE.png')
     image2 = Image.open('Target_With_SMOTE.png')
