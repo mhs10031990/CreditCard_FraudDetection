@@ -44,7 +44,7 @@ with tab1:
     HtmlFile = open("data_profile.html", 'r', encoding='utf-8')
     source_code = HtmlFile.read() 
     components.html(source_code, height = 600, scrolling=True)
-'''
+
 with tab2:
     image1 = Image.open('Target_Without_SMOTE.jpg')
     image2 = Image.open('Target_With_SMOTE.jpg')
@@ -69,7 +69,7 @@ with tab2:
     col5.image(image5, caption='Original Model ROC/AUC')
     col6.image(image6, caption='SMOTE Model ROC/AUC')
     st.write("#")    
-'''
+
 with tab3:
     if check_prediction > 0:
         #st.text_input("Raw Input", payload)
