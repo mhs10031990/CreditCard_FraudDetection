@@ -39,10 +39,12 @@ with st.sidebar:
 
 
 tab1, tab2, tab3 = st.tabs(["Data Profile", "Insights", "Prediction"])
+
 with tab1:
-    HtmlFile = open("data_profile.html", 'r', encoding='utf-8')
-    source_code = HtmlFile.read() 
-    components.html(source_code, height = 600, scrolling=True)
+    st.write("Work in Progress")
+    #HtmlFile = open("data_profile.html", 'r', encoding='utf-8')
+    #source_code = HtmlFile.read() 
+    #components.html(source_code, height = 600, scrolling=True)
 
 with tab2:
     image1 = Image.open('Target_Without_SMOTE.png')
@@ -69,7 +71,6 @@ with tab2:
     col6.image(image6, caption='SMOTE Model ROC/AUC')
     st.write("#")    
 
-'''
 with tab3:
     if check_prediction > 0:
         st.text_input("Raw Input", payload)
@@ -89,5 +90,3 @@ with tab3:
         st.write("#")
     else:
         st.write("Submit to check the model prediction")
-
-'''
