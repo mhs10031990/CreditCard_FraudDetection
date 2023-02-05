@@ -52,25 +52,33 @@ with tab2:
     image4 = Image.open('randforest_model_with_smote.png')
     image5 = Image.open('reandom_forest_with_smote_ROC_AUC.png')
     
-    col1, col2 = st.columns(2)
+    st.image(image2)
+    st.write("#")
+    st.image(image3)
+    st.write("#")
+    st.image(image4)
+    st.write("#")
+    st.image(image5)
+
+    #col1, col2 = st.columns(2)
     
-    with col1:
-        st.header('Model Confusion Metrics')
-        st.image(image2)
+    #with col1:
+    #    st.header('Model Confusion Metrics')
+    #    st.image(image2)
 
-    with col2:
-        st.header('Model ROC/AUC')
-        st.image(image3)
+    #with col2:
+    #    st.header('Model ROC/AUC')
+    #    st.image(image3)
 
-    col3, col4 = st.columns(2)
+    #col3, col4 = st.columns(2)
     
-    with col3:
-        st.header('Tuned Model Confusion Metrics')
-        st.image(image4)
+    #with col3:
+    #    st.header('Tuned Model Confusion Metrics')
+    #    st.image(image4)
 
-    with col4:
-        st.header('Tuned Model ROC/AUC')
-        st.image(image5)
+    #with col4:
+    #    st.header('Tuned Model ROC/AUC')
+    #    st.image(image5)
     
 with tab3:
     if check_prediction > 0:
