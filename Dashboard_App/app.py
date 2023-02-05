@@ -62,7 +62,7 @@ with tab2:
         st.header('Model ROC/AUC')
         st.image(image3)
 
-col3, col4 = st.columns(2)
+    col3, col4 = st.columns(2)
     
     with col3:
         st.header('Tuned Model Confusion Metrics')
