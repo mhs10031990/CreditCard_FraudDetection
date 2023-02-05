@@ -58,15 +58,15 @@ with tab2:
     col2.image(image2, caption='SMOTE Target distribution')
     st.write("#")
 
-    col3, col4 = st.columns(2)
-    col3.image(image3, caption='Original Model Metrics')
-    col4.image(image4, caption='SMOTE Model Metrics')
-    st.write("#")
+    #col3, col4 = st.columns(2)
+    #col3.image(image3, caption='Original Model Metrics')
+    #col4.image(image4, caption='SMOTE Model Metrics')
+    #st.write("#")
 
-    col5, col6 = st.columns(2)
-    col5.image(image5, caption='Original Model ROC/AUC')
-    col6.image(image6, caption='SMOTE Model ROC/AUC')
-    st.write("#")    
+    #col5, col6 = st.columns(2)
+    #col5.image(image5, caption='Original Model ROC/AUC')
+    #col6.image(image6, caption='SMOTE Model ROC/AUC')
+    #st.write("#")    
 
 with tab3:
     if check_prediction > 0:
