@@ -49,7 +49,7 @@ with tab2:
     image1 = Image.open('Target_Without_SMOTE.png')
     image2 = Image.open('Target_With_SMOTE.png')
 
-    st.image(image1, caption='Day wise item sales breakup')
+    st.image(image1, caption='Original Target distribution')
     st.write("#")
     
     #image3 = Image.open('randforest_model_no_smote.png')
