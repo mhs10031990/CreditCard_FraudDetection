@@ -46,17 +46,17 @@ with tab1:
     components.html(source_code, height = 600, scrolling=True)
 
 with tab2:
-    image1 = Image.open('Target_Without_SMOTE.png')
-    image2 = Image.open('Target_With_SMOTE.png')
-
-    st.image(image1, caption='Original Target distribution')
+    image1 = Image.open('Target_With_SMOTE.png')
+    st.image(image1, caption='Target distribution')
     st.write("#")
     
-    #image3 = Image.open('randforest_model_no_smote.png')
-    #image4 = Image.open('randforest_model_with_smote.png')
-    #image5 = Image.open('reandom_forest_no_smote_ROC_AUC.png')
-    #image6 = Image.open('reandom_forest_with_smote_ROC_AUC.png')
-    
+    image2 = Image.open('randforest_model_with_smote.png')
+    st.image(image2, caption='Model Confusion Metrics')
+    st.write("#")
+
+    image3 = Image.open('reandom_forest_with_smote_ROC_AUC.png')
+    st.image(image3, caption='Model ROC/AUC')
+    st.write("#")
     
 with tab3:
     if check_prediction > 0:
