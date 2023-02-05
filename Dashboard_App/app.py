@@ -54,8 +54,10 @@ with tab2:
     image6 = Image.open('reandom_forest_with_smote_ROC_AUC.png')
 
     #col1, col2 = st.columns(2)
-    #col1.image(image1, caption='Original Target distribution')
-    #col2.image(image2, caption='SMOTE Target distribution')
+    st.image(image1, caption='Original Target distribution')
+    st.write("#")
+    st.image(image2, caption='SMOTE Target distribution')
+    
     #st.write("#")
 
     #col3, col4 = st.columns(2)
