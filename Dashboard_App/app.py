@@ -47,7 +47,7 @@ with tab1:
 
 with tab2:
     image1 = Image.open('Target_Without_SMOTE.png')
-    #image2 = Image.open('Target_With_SMOTE.png')
+    image2 = Image.open('Target_With_SMOTE.png')
     #image3 = Image.open('randforest_model_no_smote.png')
     #image4 = Image.open('randforest_model_with_smote.png')
     #image5 = Image.open('reandom_forest_no_smote_ROC_AUC.png')
