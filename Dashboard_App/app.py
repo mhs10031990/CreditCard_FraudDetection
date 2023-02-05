@@ -48,17 +48,17 @@ with tab1:
 with tab2:
   
     image2 = Image.open('randforest_model_with_smote.png')
-    image3 = Image.open('reandom_forest_with_smote_ROC_AUC.png')
-    image4 = Image.open('randforest_model_with_smote.png')
-    image5 = Image.open('reandom_forest_with_smote_ROC_AUC.png')
+    #image3 = Image.open('reandom_forest_with_smote_ROC_AUC.png')
+    #image4 = Image.open('randforest_model_with_smote.png')
+    #image5 = Image.open('reandom_forest_with_smote_ROC_AUC.png')
     
     st.image(image2)
     st.write("#")
-    st.image(image3)
-    st.write("#")
-    st.image(image4)
-    st.write("#")
-    st.image(image5)
+    #st.image(image3)
+    #st.write("#")
+    #st.image(image4)
+    #st.write("#")
+    #st.image(image5)
 
     #col1, col2 = st.columns(2)
     
