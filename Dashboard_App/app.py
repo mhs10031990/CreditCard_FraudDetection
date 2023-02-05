@@ -69,7 +69,7 @@ with tab2:
         st.image(image4)
 
     with col4:
-        st.header('Tuned Model ROC/AUC)
+        st.header('Tuned Model ROC/AUC')
         st.image(image5)
     
 with tab3:
