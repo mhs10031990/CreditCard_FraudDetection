@@ -46,17 +46,31 @@ with tab1:
     components.html(source_code, height = 600, scrolling=True)
 
 with tab2:
-    image1 = Image.open('Target_With_SMOTE.png')
-    st.image(image1, caption='Target distribution')
-    st.write("#")
-    
+  
     image2 = Image.open('randforest_model_with_smote.png')
-    st.image(image2, caption='Model Confusion Metrics')
-    st.write("#")
-
     image3 = Image.open('reandom_forest_with_smote_ROC_AUC.png')
-    st.image(image3, caption='Model ROC/AUC')
-    st.write("#")
+    image4 = Image.open('randforest_model_with_smote.png')
+    image5 = Image.open('reandom_forest_with_smote_ROC_AUC.png')
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.header('Model Confusion Metrics')
+        st.image(image2)
+
+    with col2:
+        st.header('Model ROC/AUC')
+        st.image(image3)
+
+col3, col4 = st.columns(2)
+    
+    with col3:
+        st.header('Tuned Model Confusion Metrics')
+        st.image(image4)
+
+    with col4:
+        st.header('Tuned Model ROC/AUC)
+        st.image(image5)
     
 with tab3:
     if check_prediction > 0:
