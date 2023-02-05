@@ -57,7 +57,7 @@ with tab2:
     st.image(image1, caption='Original Target distribution')
     st.write("#")
     st.image(image2, caption='SMOTE Target distribution')
-    
+    st.write("#")
     #st.write("#")
 
     #col3, col4 = st.columns(2)
