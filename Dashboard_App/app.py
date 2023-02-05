@@ -47,16 +47,16 @@ with tab1:
 
 with tab2:
     image1 = Image.open('Target_Without_SMOTE.png')
-    image2 = Image.open('Target_With_SMOTE.png')
+    #image2 = Image.open('Target_With_SMOTE.png')
     #image3 = Image.open('randforest_model_no_smote.png')
     #image4 = Image.open('randforest_model_with_smote.png')
     #image5 = Image.open('reandom_forest_no_smote_ROC_AUC.png')
     #image6 = Image.open('reandom_forest_with_smote_ROC_AUC.png')
 
-    col1, col2 = st.columns(2)
-    col1.image(image1, caption='Original Target distribution')
-    col2.image(image2, caption='SMOTE Target distribution')
-    st.write("#")
+    #col1, col2 = st.columns(2)
+    #col1.image(image1, caption='Original Target distribution')
+    #col2.image(image2, caption='SMOTE Target distribution')
+    #st.write("#")
 
     #col3, col4 = st.columns(2)
     #col3.image(image3, caption='Original Model Metrics')
