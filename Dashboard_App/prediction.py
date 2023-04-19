@@ -8,7 +8,7 @@ def binary_model(payload):
     
     headers={"Content-type":"application/json"}
     url = 'http://svc-e5a99d50-7723-47a5-8ac6-bd5c9bae793c:5001/creditcardfrauddetectionmodel/b662fba5-4e6c-4fd9-872b-83fbdff39018/score'
-    data={"payload" : str(payload)}
+    data={"payload" : payload}
     response_json = requests.post(url, json=data, headers=headers)
     st.text_input("API Response: ",response_json.content)
     response = response_json.json()
