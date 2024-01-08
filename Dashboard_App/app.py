@@ -84,7 +84,7 @@ with tab3:
     if check_prediction > 0:
         #st.text_input("Raw Input", payload)
         headers={"Content-type":"application/json"}
-        url = 'http://svc-c1472c0d-f6b1-496c-b37d-1b6217315da8:5001/creditcardfrauddetectionmodel/b662fba5-4e6c-4fd9-872b-83fbdff39018/score'
+        url = 'http://svc-8b6ea9ed-6c00-464a-a1a1-63529b992d58:5001/ccfrauddetectionmodel/6d176a03-54ee-4d02-ae2d-c588311e3967/score'
         score_input = {"payload" : payload}
         st.text_input("Model Payload", score_input)
         response_json = requests.post(url, json=score_input, headers=headers)
