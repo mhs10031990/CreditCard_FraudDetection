@@ -91,7 +91,7 @@ with tab3:
         #st.text_input("API Response: ",response_json.content)
         response = response_json.json()
         try:
-            output1 = response['upload_logging_data']['response_data']
+            output1 = response['data']
             st.text_input ('Binary Model Output: ',output1)
         except ValueError:
             output1 =  response.status_code 
